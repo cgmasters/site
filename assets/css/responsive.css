@@ -1623,9 +1623,9 @@ table {
 	width: 100%;
 	background:#3B3A36;
 	margin: 0px auto;
-	display: auto;
+	display: flex;
 	justify-content: left;
-	height: 100%;
+	height: auto;
   }
   
   .my-nav span {
@@ -1654,6 +1654,8 @@ table {
   }
   
   .my-nav .slide {
+	overflow-y: auto;
+	overflow-x: auto; 
 	clear: both;
 	width: 100%;
 	height: 0px;
@@ -1666,6 +1668,7 @@ table {
 	padding: 9px;
 	width: 100%;
   }
+
 
   .my-nav .slide th {
     background-color:  #111111bb;
@@ -1690,6 +1693,7 @@ table {
   
   .my-nav #touch:checked + .slide {
 	height: 250px;
+	max-height: 300px;
   }
 
 
@@ -2190,6 +2194,7 @@ table {
     border-top-left-radius: 45px;
     opacity: 0.302;
 	margin-top: 100px;
+	max-width: 200px; 
 }
 
 .square_box.box_three {
@@ -2197,8 +2202,8 @@ table {
     background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     opacity: 0.059;
-    left: 70px;
-    top: -35px;
+    left:160px;
+    top: -15px;
     width: 400px;
     height: 400px;
     border-radius: 45px;
@@ -2210,9 +2215,9 @@ table {
     background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     opacity: 0.059;
     left: 160px;
-    top: -40px;
+    top: -100px;
     width: 450px;
-    height: 550px;
+    height: 400px;
     border-radius: 45px;
 }
 
