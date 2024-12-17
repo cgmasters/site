@@ -1190,16 +1190,17 @@ table {
 
 .snip1482 {
 	position: relative;
-	margin: 10px 20px;
-	min-width: 600px;
-	max-width: 1000px;
+	margin: 5px auto;
+	min-width: 400px;
+	max-width: 80%;
 	min-height: 600px;
 	width: 100%;
 	color: #222121;
 	text-align: right;
 	line-height: 1.4em;
-	background-color: transparent;
+	background-color: 0 2px 5px rgba(0, 0, 0, 0.041);
 	font-size: 18px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
   .snip1482 * {
 	-webkit-box-sizing: border-box;
@@ -1264,83 +1265,16 @@ table {
 	opacity: 1;
   }
   
-  /* Pop Out Image on About Us Page (Left Side)*/
-
-.snip148 {
-	position: relative;
-	margin: 10px 20px;
-	min-width: 600px;
-	max-width: 1000px;
-	min-height: 600px;
-	width: 100%;
-	color: #222121;
-	text-align: left; /* Changed to left alignment */
-	line-height: 1.4em;
-	background-color: transparent;
-	font-size: 18px;
-  }
-  .snip148 * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.35s ease;
-	transition: all 0.35s ease;
-  }
-  .snip148 img {
-	position: absolute;
-	left: 50%; /* Changed to left */
-	top: 50%;
-	opacity: 1;
-	width: 100%;
-	-webkit-transform: translate(-50%, -50%); /* Changed transformation */
-	transform: translate(-50%, -50%);
-  }
-  .snip148 figcaption {
-	position: absolute;
-	width: 50%;
-	top: 50%;
-	right: -10px; /* Changed to right */
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	padding: 20px 0 0px 20px;
-	text-align: left; /* Changed text alignment */
-  }
-  .snip148 h2,
-  .snip148 p {
-	margin: 0;
-	width: 100%;
-	-webkit-transform: translateX(-20px); /* Changed transformation */
-	transform: translateX(-20px);
-	opacity: 0;
-  }
-  .snip148 h2 {
-	font-family: 'Playfair Display', Arial, sans-serif;
-	text-transform: none;
-	margin-bottom: 5px;
-  }
-  .snip148 p {
-	font-size: 0.8em;
-	font-weight: 500;
-  }
-  .snip148 a {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-  }
-  .snip148:hover img,
-  .snip148.hover img {
-	width: 55%;
-	left: 22%; /* Changed to left */
-  }
-  .snip148:hover figcaption h2,
-  .snip148.hover figcaption h2,
-  .snip148:hover figcaption p,
-  .snip148.hover figcaption p {
-	-webkit-transform: translateX(0px);
-	transform: translateX(0px);
-	opacity: 1;
+  @media screen and (max-width: 768px) { 
+	.snip1482 img {
+	  width: 100%; 
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+	}
+	.snip1482 {
+	  margin-bottom: 10px; 
+	  margin-left: auto;
+	  margin-right: auto;
+	}
   }
 
   /* Event Info Hover over Image */
@@ -1775,6 +1709,9 @@ table {
 	table caption {
 	  display: none;
 	}
+	.table-bordered td, 
+  .table-bordered th {
+    width: auto !important; /* Allow cells to expand */
   }
   
   .p {
@@ -2270,3 +2207,5 @@ table {
 	  opacity: 0;
 	}
   }
+
+  
