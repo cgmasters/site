@@ -169,7 +169,7 @@
         
               <div class="mpo-modal-slide content-1">
                 <div class="mpo-modal-content">
-                  <h2> SAMA Medal Standards (2024)</h2>
+                  <h2> SAMA Medal Standards (2025)</h2>
                   <p style="text-align: center;"><strong>outdoor stadia</strong></p>
                     <img  src="assets/img/standard_1.png" alt="" > 
         
@@ -182,9 +182,9 @@
         
               <div class="mpo-modal-slide content-2">
                 <div class="mpo-modal-content">
-                    <h2 class="section-title-small text-center mb-50"> SAMA Medal Standards (2024)</h2>
+                    <h2> SAMA Medal Standards (2025)</h2>
                     <p style="text-align: center;"><strong>outdoor stadia</strong></p>
-                    <img src="assets/img/standard_1.png"> 
+                    <img src="assets/img/standard_2.png"> 
                   <p></p>
         
                   <div class="mpo-modal-nav">
@@ -196,9 +196,9 @@
         
               <div class="mpo-modal-slide content-3">
                 <div class="mpo-modal-content">
-                    <h2> SAMA Medal Standards (2024)</h2>
-                  <p style="text-align: center;"><strong>outdoor stadia</strong></p>
-                    <img  src="assets/img/standard_1.png" alt="" > 
+                    <h2> SAMA Medal Standards (2025)</h2>
+                  <p style="text-align: center;"><strong>outdoor non-stadia</strong></p>
+                    <img  src="assets/img/standard_3.png" alt="" > 
         
                   <div class="mpo-modal-nav">
                     <label for="modal-content-2" class="prev-slide">&#8249;&#8249;</a>
@@ -222,7 +222,7 @@
                                 <li class="active"><a aria-expanded="true" href="#htab1" role="tab" data-toggle="tab">Rules for Records</a></li>
                                 <li class=""><a aria-expanded="false" href="#htab2" role="tab" data-toggle="tab">Standards for Medals</a></li>
                                 <li class=""><a aria-expanded="false" href="#htab3" role="tab" data-toggle="tab">Colour Standards</a></li>
-                                <li class=""><a aria-expanded="false" href="#htab4" role="tab" data-toggle="tab">Road National Colours</a></li>
+                                <li class=""><a aria-expanded="false" href="#htab4" role="tab" data-toggle="tab">Other Specifications</a></li>
                             </ul><!-- /.nav-tabs -->
 
                             <div class="tab-content" style="max-height: 300px; overflow-y: auto;">
@@ -261,7 +261,7 @@
                                         <div class="row">
                                             <div class="col-sm-6">                                    
                                                 <div class="clearfix mb-50"></div>
-                                                <a href="assets/docs/Standards/SAMA/SAMA colours stds 2024.pdf" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
+                                                <a href="assets/docs/Standards/SAMA/SAMA Medal stds 2025.pdf" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
                                             </div>
                                         </div>
                                     </div><!-- /.buttons --></p>
@@ -293,7 +293,7 @@
                      
                                             <div class="col-sm-6">                                    
                                                 <div class="clearfix mb-50"></div>
-                                                <a href="assets/docs/Standards/" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
+                                                <a href="assets/docs/Standards/SAMA/SAMA National Colours stds 2025.pdf" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
                                             </div>
                                         </div>
                                       
@@ -301,21 +301,28 @@
                                     </div><!-- /.buttons -->  
 
                                     <div class="tab-pane fade" id="htab4">
-                                        <p class="text-left mb-10"><strong>Road Race/Race Walk are Non-stadia Events</strong></p>
+                                        <p class="text-left mb-10"><strong>Road National (non-stadia) Events</strong></p>
                                         <p>
                                             1. Age: Athletes must be at least 35 years old.<br>
                                             2. Membership: Must be a registered member of SAMA (CGMA).<br>
                                             3. Race Participation: Athletes must meet the standard in a minimum of 2 road races in the same age group.<br>
                                             4. Race Distances: Races must be 10km/ Half Marathon/ Marathon/ 50km Road Race Walk.
+                                            </p><p>
+                                                <br>
                                             </p>
 
                                         <div class="col-sm-6">                                    
-                                            <div class="clearfix mb-50"></div>
-                                            <a href="assets/docs/Standards/Road National/National Colours Prerequisites Road National Colours 2024.pdf" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
+                                            <div class="clearfix mb-50">
+                                            <a href="assets/docs/Standards/Specifications/National Colours Prerequisites Road National Colours 2024.pdf" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
                                         </div>
 
-                                    </div>
+                                            <p class="text-left mb-10"><strong>Track & Field Events</strong></p>                                                                                         
+                                            <p class="clearfix mb-50">WMA Hurdle & Steeplechase and Throwing implementations.</p>
+                                            <a href="assets/docs/Standards/Specifications/WMA implement specifications.pdf" target="_blank" class="btn btn-small btn-gray-border mb-10">Download</a>
+                                                                    
+                                        </div>    
 
+                                    </div>
                               </div><!-- /.tab-pane  -->
 
                            
@@ -440,37 +447,28 @@
 
                                                 </div>
                                                 
-                                                <a href="assets/docs/Applications/Records Applications/" id="downloadLink" target="_blank" class="btn btn-small btn-gray-border mb-10" style="text-align: center;"> Download</a>
-                                                
+                                                <a href="assets/docs/Applications/Records Applications/"  onclick="loadSubfolder('assets/docs/Applications/Records Applications/')" target="_blank" class="btn btn-small btn-gray-border mb-10" style="text-align: center;"> Download</a>
+                                                                                      
+
+<div id="folder-content"></div>
+
 <script>
-  const radioButtons = document.querySelectorAll('input[name="radio-btn"]');
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  const downloadLink = document.getElementById('downloadLink');
+  function loadSubfolder(folderPath) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', folderPath);
 
-  radioButtons.forEach(radio => {
-    radio.addEventListener('change', () => {
-      const selectedRadio = document.querySelector('input[name="radio-btn"]:checked');
-      const selectedCheckbox = document.querySelector('input[type="checkbox"]:checked');
-
-      let src = '';
-      if (selectedRadio.id === 'radio-btn1') {
-        src = 'assets/docs/records_app/cgma/';
-      } else if (selectedRadio.id === 'radio-btn2') {
-        src = 'assets/docs/records_app/ga/';
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        document.getElementById('folder-content').innerHTML = xhr.responseText;
+      } else {
+        console.error('Request failed.  Returned status of ' + xhr.status);
       }
-      // ... other conditions for other radio buttons ...
+    };
 
-      if (selectedCheckbox.id === 'checkbox1') {
-        src += 'track_event.pdf';
-      } else if (selectedCheckbox.id === 'checkbox2') {
-        src += 'field_event.pdf';
-      }
-      // ... other conditions for other checkboxes ...
-
-      downloadLink.href = src;
-    });
-  });
+    xhr.send();
+  }
 </script>
+
                                                                                                  
                                             </div>                          
                                         </div><!-- /.panel-body -->                                    
@@ -608,7 +606,7 @@
                         <ul class="list-unstyled">
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="Privacy.html">Privacy</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact-form.html">Contact</a></li>
                         </ul>
                     </div>
                     

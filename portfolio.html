@@ -7,11 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Gallery | Central Gauteng Masters Athletics</title>
+    <title>Portfolio | Central Gauteng Masters Athletics</title>
 
-    <meta name="Results" content="Central Gauteng Masters Athletics Organisation">
+    <meta name="description" content="Central Gauten Masters Athletics">
     <meta name="author" content="Nadine van der Haar">
-    <meta name="keywords" content="athetlics, masters, results, central gauteng">
+    <meta name="keywords" content="html, css, twitter bootstrap, javascript, jquery, responsive">
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -21,7 +21,7 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    
     <!-- Favicon
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
@@ -30,7 +30,7 @@
     <!-- Stylesheets
     ================================================== -->
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">    
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -64,7 +64,7 @@
 
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
-                        
+                       
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Rules <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
@@ -102,141 +102,151 @@
 
     <main id="main" class="site-main">
 
-        <section class="site-section-small section-portfolio-item">
+        <section class="site-section-small portfolio">
 
             <div class="container">
-
-                <h1 class="section-title-big text-center">Events</h1>
-
-                <div class="row">
-
-                    <div class="col-md-8">
-                        <div id="PortfolioItemSlider">                
-                            <img class="img-carousel" src="assets/img/portfolio-3.jpg" alt="" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);">
-                            <img class="img-carousel" src="assets/img/portfolio-3.jpg" alt="" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);">  
-
-                        </div><!-- /#PortfolioItemSlider -->   
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <p class="small-title mb-30">Recent Event</p>
-
-                        <p class="mb-30">UJ & CGA hosted the final official track and field event of the year, marking the end of the 2024 athletic season.</p>
-                        <p class="mb-30">The event featured two dedicated masters races: the 60m and 150m.</p>
-                        <p class="mb-30">Some masters athletes also participated in the 1000m race alongside the U16 athletes.</p>
-
-                        <p class="small-title mb-30">Event Details</p>                        
-                        <ul class="list-unstyled portfolio-date-cat-cl pull-left">
-                            <li>Date:</li>
-                            <li>Category:</li>
-                            <li>Competition:</li>
-                        </ul>
-
-                        <ul class="list-unstyled portfolio-date-cat-cl pl-100 mb-30">
-                            <li>30 September, 2024</li>
-                            <li><a href="#">Track & Field</a></li>
-                            <li><a href="#">UJ/CGA Summer Challenge</a></li>
-                        </ul>
-
-           
-                        <a href="results.html#select-event-section" class="button-42" style="width: 140px;">→ View Results</a>
-                    </br>
-                </br>
-
-                        <div class="social-links">
-                            <p class="small-title mb-10">Share This:</p>
-                            <a class="twitter-bg" href="https://x.com/"><i class="fa-brands fa-x-twitter" target="blank"></i></a>
-                            <a class="facebook-bg" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" target="blank"></i></a>
-                            <a class="google-plus-bg" href="https://www.instagram.com/"><i class="fa-brands fa-instagram" class="instagram" target="blank"></i></a>
-                            <a class="message-bg" href="https://api.whatsapp.com/" class="whatsapp" target="_blank">
-                                <i class="fa-brands fa-whatsapp"></i></a>
-                        </div><!-- /.social-links -->
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </section><!-- /.section-portfolio-item -->
-
-        <section class="site-section-small portfolio light-gray-bg">
-
-            <div class="container">
-                <h2 class="section-title text-center pb-80">All Events</h2>
+                <h1 class="section-title-big text-center">Gallery</h1>
             </div>
 
             <div class="container-fluid">
 
-                <div class="row">
+                <ul class="portfolio-sorting list-inline text-center">
+                    <li><a href="#" class="btn btn-transparent active" data-group="all">All</a></li>
+                    <li><a href="#" class="btn btn-transparent" data-group="identity">1</a></li>
+                    <li><a href="#" class="btn btn-transparent" data-group="uiux">2</a></li>
+                    <li><a href="#" class="btn btn-transparent" data-group="illustrations">3</a></li>
+                    <li><a href="#" class="btn btn-transparent" data-group="branding">4</a></li>
+                </ul><!-- /.portfolio-sorting  -->
 
-                    <div class="col-md-3 col-xs-6">
-                        <a class="portfolio-link" >
+            	<div class="row" id="grid">
+            		
+            		<div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["uiux"]'>
+                        <a class="portfolio-link" href="portfolio-item.html">
                             <img src="assets/img/portfolio-1.jpg" alt="" class="img-carousel">
                             <div class="portfolio-info">
                                 <div class="portfolio-info-top">
-                                    <h3>CG Masters Champs</h3>
+                                    <h3>CG Masters Athletics Championships 2024</h3>
                                 </div><!-- /.portfolio-info-top -->
                                 <div class="portfolio-info-bottom">
-                                    <p>The CG Masters Champs, an annual event hosted by CGMA and other regions, takes place in April. Open to all provinces, it features track, field, and race-walking events. No qualifying rounds are required.                                    </p>
+                                    <p>13 April 2022</p>
                                 </div><!-- /.portfolio-info-bottom -->
                             </div><!-- /.portfolio-info  -->
-                            <style>
-                                @media (max-width: 768px) { 
-                                  .portfolio-info-bottom p {
-                                    overflow-y: auto; 
-                                    max-height: 150px; 
-                                  }
-                                }
-                              </style>
                         </a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <a class="portfolio-link">
+                    </div><!-- /.col-lg-fifth  -->
+                    <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["branding"]'>
+                        <a class="portfolio-link" href="portfolio-item.html">
                             <img src="assets/img/portfolio-2.jpg" alt="" class="img-carousel">
                             <div class="portfolio-info">
                                 <div class="portfolio-info-top">
-                                    <h3>SAMA Championships</h3>
+                                    <h3>CG Masters Athletics Championships 2022</h3>
                                 </div><!-- /.portfolio-info-top -->
                                 <div class="portfolio-info-bottom">
-                                    <p>The South African Masters Athletics Championships occur in May, following provincial championships. No qualifying rounds are necessary for participation. Athletes must be registered with Central Gauteng Masters Athletics (CGMA) to compete.</p>
+                                    <p>13 April 2022</p>
                                 </div><!-- /.portfolio-info-bottom -->
                             </div><!-- /.portfolio-info  -->
                         </a>
-                    </div>
-                   
-                    <div class="col-md-3 col-xs-6">
-                        <a class="portfolio-link">
-                            <img src="assets/img/portfolio-4.jpg" alt="" class="img-carousel">
-                            <div class="portfolio-info">
-                                <div class="portfolio-info-top">
-                                    <h3>Cross Country</h3>
-                                </div><!-- /.portfolio-info-top -->
-                                <div class="portfolio-info-bottom">
-                                    <p>CGA hosts annual Cross Country leagues from March to May. Athletes must participate in at least 3 leagues to qualify for provincials. Top athletes are selected to represent Central Gauteng at the National Championships.</p>
-                                </div><!-- /.portfolio-info-bottom -->
-                            </div><!-- /.portfolio-info  -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <a class="portfolio-link"  href="Events.html">
+                    </div><!-- /.col-lg-fifth  -->
+                    <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["identity"]'>
+                        <a class="portfolio-link" href="portfolio-item.html">
                             <img src="assets/img/portfolio-3.jpg" alt="" class="img-carousel">
                             <div class="portfolio-info">
                                 <div class="portfolio-info-top">
                                     <h3>UJ/CGA Summer Challenge</h3>
                                 </div><!-- /.portfolio-info-top -->
                                 <div class="portfolio-info-bottom">
-                                    <p>UJ and CGA host the final track and field event of the year in November. All age categories are welcome.Pre-entry through UJ Sport is mandatory for all participants.</p>
+                                    <p>30 November 2024</p>
                                 </div><!-- /.portfolio-info-bottom -->
                             </div><!-- /.portfolio-info  -->
                         </a>
-                    </div>
-                </div>
+                    </div><!-- /.col-lg-fifth  -->
+                    <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["uiux"]'>
+                        <a class="portfolio-link" href="portfolio-item.html">
+                            <img src="assets/img/portfolio-4.jpg" alt="" class="img-carousel">
+                            <div class="portfolio-info">
+                                <div class="portfolio-info-top">
+                                    <h3>Cross Country 2023</h3>
+                                </div><!-- /.portfolio-info-top -->
+                                <div class="portfolio-info-bottom">
+                                    <p>Dobsonville</p>
+                                </div><!-- /.portfolio-info-bottom -->
+                            </div><!-- /.portfolio-info  -->
+                        </a>
+                    </div><!-- /.col-lg-fifth  -->
+                    <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["illustrations"]'>
+                        <a class="portfolio-link" href="portfolio-item.html">
+                            <img src="assets/img/portfolio-5.jpg" alt="" class="img-carousel">
+                            <div class="portfolio-info">
+                                <div class="portfolio-info-top">
+                                    <h3>World Master Championships (Perth)</h3>
+                                </div><!-- /.portfolio-info-top -->
+                                <div class="portfolio-info-bottom">
+                                    <p>2016</p>
+                                </div><!-- /.portfolio-info-bottom -->
+                            </div><!-- /.portfolio-info  -->
+                        </a>
+                    </div><!-- /.col-lg-fifth  -->
+
+           
+
+            	</div><!-- /#grid -->
 
             </div>
             
         </section><!-- /.portfolio -->
+
+
+        <section>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="col-sm-12">
+                  <div class="alert alert-simple alert-info alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered" role="alert" data-brk-library="component__alert"> 
+                    <button type="button" class="close font__size-18"> 
+                      <span aria-hidden="true">
+                        <i class="fa-solid fa-circle-info"></i>
+                      </span>
+                      <span class="sr-only">Close</span>
+                    </button>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <strong class="font__weight-semibold">Notice:</strong> The GN Masters Champs from 04-Apr to 05-Apr has been cancelled.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        
+
+   <!-- /.sections scrolling start-->
+   <section class="section top-section">
+    <div class="content-container content-theme-dark">
+      <div class="content-inner">
+        <div class="content-center">
+            <h1><img src="assets/img/apple-touch-icon.png"></h1>
+            <p>Central Gauteng</a></p>
+            <p>Masters Athletics</a></p>
+            
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bottom-section">
+    <div class="content-container content-theme-light"></h1>
+      <div class="content-inner">
+        <div class="content-center">
+            <p><strong>"It's not about the finish line, it's about the finish."</strong></a></p>
+            <p><strong>Kenenisa Bekele (Ethiopian long-distance runner)</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- /.sections scrolling end-->
+
+            
+            
+        </section><!-- /.section-work-with-us -->
 
         <section class="social-networks">
 
@@ -244,7 +254,7 @@
 
                 <div class="row">
 
-                    <a class="white-text black-bg twitter-bg" href="https://x.com/GautengMasters"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                    <a class="white-text black-bg twitter-bg" href="https://x.com/GautengMasters"><i class="" aria-hidden="true"></i>𝕏</a>
                     <a class="white-text gray-bg facebook-bg" href="https://www.facebook.com/people/Central-Gauteng-Masters-Athletics/100063556872735/"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                     <a class="white-text black-bg google-plus-bg" href="https://www.instagram.com/centralgautengmasters/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                     <a class="white-text gray-bg message-bg" href="https://wa.me/+27782096838"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
@@ -296,7 +306,7 @@
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="Privacy.html">Privacy</a></li>
                             <li><a href="contact-form.html">Contact</a></li>
-                        </ul><!-- /.list-unstyled -->
+                        </ul>
                     </div>
                     
                 </div>
