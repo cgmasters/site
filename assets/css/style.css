@@ -2209,7 +2209,7 @@ input:checked + section.box .box-title:before {
 }
 
 .button-42:hover {
-  box-shadow: rgba(253, 30, 0, 0.5) 0 3px 8px;
+  box-shadow: rgba(253, 30, 0, 0.5) 0 0 20px;
 }
 
 .button-42 a {
@@ -2258,6 +2258,7 @@ input:checked + section.box .box-title:before {
   }
 }
 
+
 /* Back to Top */
 
 #backToTop {
@@ -2284,6 +2285,7 @@ input:checked + section.box .box-title:before {
   background-color: transparent;
   color:rgb(245, 209, 5);
   text-shadow: rgba(10, 2, 0, 0.205) 0 2px 5px;
+  transform: scale(1.15);
 }
 
 /* Custom Scrollbar*/
@@ -2304,3 +2306,4 @@ input:checked + section.box .box-title:before {
 {
 	background-color: #000000;
 }
+

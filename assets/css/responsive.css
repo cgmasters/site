@@ -1200,7 +1200,7 @@ table {
 	line-height: 1.4em;
 	background-color: 0 2px 5px rgba(0, 0, 0, 0.041);
 	font-size: 18px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+	box-shadow: -2px -2px 4px 0px #ffffff, 10px 10px 10px 0px rgba(0, 0, 0, .15)
   }
   .snip1482 * {
 	-webkit-box-sizing: border-box;
@@ -1239,6 +1239,9 @@ table {
 	font-family: 'Playfair Display', Arial, sans-serif;
 	text-transform: none;
 	margin-bottom: 5px;
+	text-decoration-line: overline;
+	text-decoration-color: #f1d117;
+	text-underline-position:above;
   }
   .snip1482 p {
 	font-size: 0.8em;
@@ -1275,6 +1278,29 @@ table {
 	  margin-bottom: 10px; 
 	  margin-left: auto;
 	  margin-right: auto;
+	}
+  }
+
+  /* Scroll Watcher for Long Content */
+
+  .scroll-watcher {
+	height: 5px;
+	position: fixed;
+	margin-top: 50px;
+	top: 0;
+	left:0;
+	z-index: 1000;
+	background-color:rgb(224, 12, 12);
+	width: 100%;
+	scale: 0 1;
+	transform-origin: left;
+	animation: scroll-watcher linear;
+	animation-timeline: scroll(y);
+  }
+  
+  @keyframes scroll-watcher {
+	to {
+	  scale: 1 1;
 	}
   }
 
@@ -1713,7 +1739,6 @@ table {
 	.table-bordered td, 
   .table-bordered th {
     max-width: auto !important; 
-	overflow: auto; 
   }
   
   .p {
@@ -1729,12 +1754,12 @@ table {
   .scrollable-section {
 	overflow-y: auto;
 	overflow-x: auto;
-	min-width: 767px;
+	 /* min-width: 767px; overflow issue */ 
 	min-height: 600px;
   }
   
   }
-  
+
 /* QR Card */
 
 .qr-card {
@@ -1746,7 +1771,7 @@ table {
     border-radius: 15px;
     margin: 20px;
 	text-align: justify;
-	box-shadow:0 0 0 7px #fff,0 0  8px 5px #000;
+	box-shadow: 0 0 0 7px #fff, 0 0 15px 5px #000;
 }
 
 
@@ -1780,9 +1805,10 @@ table {
 
 .privacy-policy-content {
 	overflow: auto;
+	overflow-x: hidden;
 	/* Size */
 	max-height: 500px; 
-	max-width: 800px;
+	max-width: 100%;
 
 	border-width: 2px;
 	border-color: #000000;
@@ -1836,7 +1862,7 @@ table {
     background-color: rgba(7, 73, 149, 0.12156862745098039);
     box-shadow: 0px 0px 2px #0396ff;
     color: #0396ff;
-  text-shadow: 2px 1px #00040a;
+  text-shadow: 1.5px 2px #00040a;
   transition:0.5s;
   cursor:pointer;
 }
