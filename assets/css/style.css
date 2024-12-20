@@ -735,7 +735,7 @@ html, body {
 }
 
 .light-gray-bg {
-  background: linear-gradient(to right, #f9f8f8, #ffffff);
+  background: linear-gradient(to right, #f9f8f8, rgb(255, 249, 249));
 }
 
 
@@ -2306,4 +2306,5 @@ input:checked + section.box .box-title:before {
 {
 	background-color: #000000;
 }
+
 
