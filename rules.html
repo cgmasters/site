@@ -73,7 +73,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Rankings <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
+                            <a href="Rankings.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Rankings <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="Rankings.html#grading">Age-grading</a></li>
                                 <li><a href="Rankings.html#records">Records</a></li>
@@ -278,15 +278,15 @@
 
                                                 <div class="col-sm-4 mt-xs-15">
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn1" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn" style="accent-color: red;">
                                                         <label for="radio-btn1">Central Gauteng Colour Standards</label>
                                                     </div>
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn2" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn" style="accent-color: red;">
                                                         <label for="radio-btn2">Provincial Colour Standards</label>
                                                     </div>
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn3" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn1" style="accent-color: red;">
                                                         <label for="radio-btn3">SA National Colour Standards</label>
                                                     </div>                                                   
                                                 </div>
@@ -399,75 +399,124 @@
                                                 <li>Lap Scoring Card (for events 3000m and longer)</li>
                                                 <li>Wind Measurement Certificate (if applicable)</li>
                                                 <li>Official Results of the event</li>
-                                            </ul><br>
-
+                                            </ul><br></div>
                                             
-                                            <div class="row">
 
+                                            <!--Multiple Select start here-->
+                                            <div class="container">
+                                                <style>
+
+                                                    
+                                                    .row { display: flex; flex-wrap: wrap; }
+                                                    .col-sm-4 { flex: 0 0 33.33%; padding: 10px; }
+                                                    
+                                                </style>
+                                            <div class="row">
                                                 <div class="col-sm-4 mt-xs-15">
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn1" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn1" style="accent-color: red;" value="SAMA">
                                                         <label for="radio-btn1">Regional (CGMA)</label>
                                                     </div>
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn2" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn2" style="accent-color: red;" value="AFMA">
                                                         <label for="radio-btn2">Provincial (GA)</label>
                                                     </div>
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn3" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn3" style="accent-color: red;" value="SAMA">
                                                         <label for="radio-btn3">National (SAMA) </label>
                                                     </div>
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn4" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn4" style="accent-color: red;" value="AFMA">
                                                         <label for="radio-btn4">Continental (AFMA)</label>                                       
                                                     </div>
                                                     <div class="radio-btn">
-                                                        <input type="radio" name="radio-btn" id="radio-btn5" style="accent-color: red;">
+                                                        <input type="radio" name="radio-btn" id="radio-btn5" style="accent-color: red;" value="WMA">
                                                         <label for="radio-btn5">World (WMA) </label>                                       
                                                     </div>
                                                 </div>
-
+                                        
                                                 <div class="col-sm-4 mt-xs-15">
                                                     <div class="checkbox">
-                                                        <input type="checkbox" id="checkbox1">
+                                                        <input type="checkbox" id="checkbox1" value="Track Event">
                                                         <label for="checkbox1">Track Event</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <input type="checkbox" id="checkbox2">
+                                                        <input type="checkbox" id="checkbox2" value="Field Event">
                                                         <label for="checkbox2">Field Event</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <input type="checkbox" id="checkbox3">
+                                                        <input type="checkbox" id="checkbox3" value="Combined Event">
                                                         <label for="checkbox3">Combined Event</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <input type="checkbox" id="checkbox4">
+                                                        <input type="checkbox" id="checkbox4" value="Non stadia event">
                                                         <label for="checkbox4">Non stadia event</label>
                                                     </div>
-
+                                        
                                                 </div>
-                                                
-                                                <a href="assets/docs/Applications/Records Applications/"  onclick="loadSubfolder('assets/docs/Applications/Records Applications/')" target="_blank" class="btn btn-small btn-gray-border mb-10" style="text-align: center;"> Download</a>
-                                                                                      
-
-<div id="folder-content"></div>
-
-<script>
-  function loadSubfolder(folderPath) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', folderPath);
-
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        document.getElementById('folder-content').innerHTML = xhr.responseText;
-      } else {
-        console.error('Request failed.  Returned status of ' + xhr.status);
-      }
-    };
-
-    xhr.send();
-  }
-</script>
+                                                <a id="downloadLink" href="#"  target="_blank" class="btn btn-small btn-gray-border mb-10" style="text-align: center; display: none; height: 25px;" > Download</a>
+                                        
+                                            </div>
+                                            <script>
+                                            const radioButtons = document.querySelectorAll('input[name="radio-btn"]');
+                                            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                                            const downloadLink = document.getElementById('downloadLink');
+                                        
+                                            function updateDownloadLink() {
+                                                let selectedRadio = null;
+                                                let selectedCheckboxes = [];
+                                        
+                                                radioButtons.forEach(radio => {
+                                                    if (radio.checked) {
+                                                        selectedRadio = radio.value;
+                                                    }
+                                                });
+                                        
+                                                checkboxes.forEach(checkbox => {
+                                                    if (checkbox.checked) {
+                                                        selectedCheckboxes.push(checkbox.value);
+                                                    }
+                                                });
+                                        
+                                                if (selectedRadio && selectedCheckboxes.length > 0) {
+                                                   let filePath = "";
+                                                    if(selectedRadio === 'SAMA')
+                                                   {
+                                                    if (selectedCheckboxes.includes("Track Event")){filePath = `assets/docs/Applications/Records Applications/SAMA/SAMA Application for Track Event Record.pdf`}
+                                                    else if (selectedCheckboxes.includes("Field Event")){filePath = `assets/docs/Applications/Records Applications/SAMA/SAMA Application for Field Event Record.pdf`}
+                                                    else if (selectedCheckboxes.includes("Combined Event")){filePath = `assets/docs/Applications/Records Applications/SAMA/SAMA Application for Combined Event Record.pdf`}
+                                                    else if (selectedCheckboxes.includes("Non stadia event")){filePath = `assets/docs/Applications/Records Applications/SAMA/SAMA Application for Non-stadia Event Record.pdf`}
+                                                   }
+                                                     if(selectedRadio === 'AFMA')
+                                                   {
+                                                    if (selectedCheckboxes.includes("Track Event")){filePath = `assets/docs/Applications/Records Applications/AFMA/AFMA Application for Track Event Record.doc`}
+                                                    else if (selectedCheckboxes.includes("Field Event")){filePath = `assets/docs/Applications/Records Applications/AFMA/AFMA Application for Field Event Record.doc`}
+                                                    else if (selectedCheckboxes.includes("Combined Event")){filePath = `assets/docs/Applications/Records Applications/AFMA/AFMA Application for Combined Event Record.doc`}
+                                                    else if (selectedCheckboxes.includes("Non stadia event")){filePath = `assets/docs/Applications/Records Applications/AFMA/AFMA Application for Non-stadia Event Record.doc`}
+                                                   }
+                                                       if(selectedRadio === 'WMA')
+                                                   {
+                                                    if (selectedCheckboxes.includes("Track Event")){filePath = `assets/docs/Applications/Records Applications/WMA/WMA Application for Track Event Record.pdf`}
+                                                    else if (selectedCheckboxes.includes("Field Event")){filePath = `assets/docs/Applications/Records Applications/WMA/WMA Application for Field Event Record.pdf`}
+                                                    else if (selectedCheckboxes.includes("Combined Event")){filePath = `assets/docs/Applications/Records Applications/WMA/WMA Application for Combined Event Record.pdf`}
+                                                    else if (selectedCheckboxes.includes("Non stadia event")){filePath = `assets/docs/Applications/Records Applications/WMA/WMA Application for Non-stadia Event Record.pdf`}
+                                                   }
+                                                    
+                                                    downloadLink.href = filePath;
+                                                    downloadLink.style.display = 'block';
+                                                }
+                                                else{
+                                                  downloadLink.style.display = 'none';
+                                                  downloadLink.href ="#";
+                                                }
+                                            }
+                                        
+                                            radioButtons.forEach(radio => radio.addEventListener('change', updateDownloadLink));
+                                            checkboxes.forEach(checkbox => checkbox.addEventListener('change', updateDownloadLink));
+                                        </script>
+                                     
+                                                                                     
+                                             <!--Multiple Select ends here-->
 
                                                                                                  
                                             </div>                          
@@ -555,10 +604,10 @@
 
                 <div class="row">
 
-                    <a class="white-text black-bg twitter-bg" href="https://x.com/GautengMasters"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-                    <a class="white-text gray-bg facebook-bg" href="https://www.facebook.com/people/Central-Gauteng-Masters-Athletics/100063556872735/"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                    <a class="white-text black-bg google-plus-bg" href="https://www.instagram.com/centralgautengmasters/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a class="white-text gray-bg message-bg" href="https://wa.me/+27782096838"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                    <a class="white-text black-bg twitter-bg" href="https://x.com/GautengMasters"><i class="fa-brands fa-x-twitter" aria-hidden="true" target="_blank"></i></a>
+                    <a class="white-text gray-bg facebook-bg" href="https://www.facebook.com/people/Central-Gauteng-Masters-Athletics/100063556872735/"><i class="fa-brands fa-facebook" aria-hidden="true" target="_blank"></i></a>
+                    <a class="white-text black-bg google-plus-bg" href="https://www.instagram.com/centralgautengmasters/"><i class="fa-brands fa-instagram" aria-hidden="true" target="_blank"></i></a>
+                    <a class="white-text gray-bg message-bg" href="https://chat.whatsapp.com/JNZ1QAJDmrJ4tDZFeFggMx"><i class="fa-brands fa-whatsapp" aria-hidden="true" target="_blank"></i></a>
  
                 </div>
                 
