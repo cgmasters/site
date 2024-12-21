@@ -1491,17 +1491,19 @@ table {
   .section p,
   .section a{
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1.3em;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	text-transform: none;
 	text-align: center;
-	
+	font-family: 'Kalam';
   }
   
   .content-theme-dark h1{
-	color: #DA251C;
+	color: #f7cf4b;
 	text-shadow: 0 20px 40px rgba(0,0,0,.5);
 	filter: drop-shadow(0px 2px 10px rgba(241, 228, 154, 0.5));
+	font-family: 'Playfair Display', serif;
+	font-size: 1.25em;
   }
   .content-theme-dark p,
   .content-theme-dark a{
@@ -1643,7 +1645,7 @@ table {
   }
   
   .my-nav .slide td {
-	height: 150px; /* Adjust the height as needed */
+	height: 150px; 
   }
 
   .my-nav #touch {
@@ -1966,8 +1968,8 @@ table {
     background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     opacity: 0.059;
-    left:160px;
-    top: -15px;
+    max-left:280px;
+    top: -30px;
     width: 400px;
     height: 400px;
     border-radius: 45px;
@@ -1978,7 +1980,7 @@ table {
     background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
     opacity: 0.059;
-    left: 160px;
+    max-left: 260px;
     top: -100px;
     width: 450px;
     height: 400px;
