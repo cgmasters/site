@@ -1814,7 +1814,7 @@ table {
 
 	border-width: 2px;
 	border-color: #000000;
-	box-shadow: 0 0 0 7px #fff,0 0  8px 5px #000;
+	box-shadow: none;
   
 	/* Centering */
 	margin: 0 auto; /* Center horizontally */
