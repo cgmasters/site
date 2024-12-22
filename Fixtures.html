@@ -140,7 +140,7 @@
 
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active" style="color: #A01F29;">MA Fixtures</li>
+                    <li class="active" style="color: #A01F29;">Fixtures</li>
                 </ol><!-- /.breadcrumb -->
 
 
@@ -270,43 +270,59 @@
                         </section>
 
 
+                        <div class="my-90">
+   
 
-<div class="ui-tabs-accordion my-90">
+                          <div class="text-center">
 
-                    <div class="container-fluid" style="text-align: left;">
-
-                      <!--Nested files start-->
-
-                      <div class="css-treeview">
-                        <ul>
-                          <h3 id="rules-section" class="section-title-small text-center mb-50">All</h3>
-                          <ul>
-                              <li><input type="checkbox" id="item-0-0" /><label for="item-0-0"><i class="fa-solid fa-plus" style="color: rgb(241, 198, 5);"></i> CGA Fixtures 2025</label>
-                             <ul>
-                                  <li><input type="checkbox" id="item-2-1" /><label for="item-2-1">CGA Road Running</label>
+                      <div class="row">
+                        <a class="btn btn-yellow-border mb-10" id="toggleCgaFixtures"><strong>CGA Fixtures 2025</strong></a>
+                    </div>
+                    
+                    <div class="container-fluid" style="text-align: left;" id="cgaFixtures2025" style="display: none;"> 
+                        <div class="center">
+                            <div class="css-treeview">
                                     <ul>
-                                      <li><a href="assets/docs/Fixtures/2025 CGA Road Running Fixtures -Final Fixtures December 2024.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
-                                      </ul>
-                                  <li><input type="checkbox" id="item-2" /><label for="item-2">CGA Track & Field Events</label>
-                                    <ul>
-                                      <li><a href="assets/docs/Fixtures/CGA Track & Field Fixtures 2025.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>                  
-                                      <li><input type="checkbox" id="item-2-2-0" /><label for="item-2-2-0">Programs</label>
-                                      <ul>
-                                      <li><a href="assets/docs/Fixtures/25 January  2025 League 1 program.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 1/Senior Meet 1</a> ✓</li>
-                                      <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 2/Senior Meet 2</a></li>
-                                      <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 3/Senior Meet 3</a></li>
-                                      <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 4/Senior Meet 4</a></li>                     
+                                        <li><input type="checkbox" id="item-2-1" /><label for="item-2-1"><i class="fa-regular fa-circle-dot" style="color: rgb(241, 198, 5);"></i> CGA Road Running Calendar</label>
+                                            <ul>
+                                                <li><a href="assets/docs/Fixtures/2025 CGA Road Running Fixtures -Final Fixtures December 2024.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><input type="checkbox" id="item-2" /><label for="item-2"><i class="fa-regular fa-circle-dot" style="color: rgb(241, 198, 5);"></i> CGA Track & Field (Open)</label>
+                                            <ul>
+                                                <li><a href="assets/docs/Fixtures/CGA Track & Field Fixtures 2025.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
+                                                <li><input type="checkbox" id="item-2-2-0" /><label for="item-2-2-0">Programs</label>
+                                                    <ul>
+                                                        <li><a href="assets/docs/Fixtures/25 January  2025 League 1 program.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 1/Senior Meet 1</a> ✓</li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 2/Senior Meet 2</a></li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 3/Senior Meet 3</a></li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 4/Senior Meet 4</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                 
-                            
-<!--Nested files end-->
-            
-            </div>
-        </div>
-      </div>
-    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        const toggleButton = document.getElementById('toggleCgaFixtures');
+                        const fixturesList = document.getElementById('cgaFixtures2025');
+                    
+                        toggleButton.addEventListener('click', () => {
+                            if (fixturesList.style.display === 'none') {
+                                fixturesList.style.display = 'block';
+                            } else {
+                                fixturesList.style.display = 'none';
+                            }
+                        });
+                    </script>
 
-           
+          </div>
+      </div>
+    </div> 
 </section><!-- /.ui-elements -->
 
 
