@@ -2155,3 +2155,139 @@ table {
 }
 
 
+/* Program Event Card */
+
+
+.event-card {
+	display: inline-block;
+	margin: 0 0 1em;
+	width: 100%;
+	-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+  border: 1px solid rgba(0,0,0,.15);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,.18);
+  padding: 5% 5% 0 5%;
+  position: relative;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1); 
+}
+.card-calendar {
+	padding: 0;
+	p.card-tag {
+		margin: 0%;
+		background-color: lighten(@orangered, 10%);
+    width: 100%;
+    padding: 6%;
+    .fa {
+      margin-right: 5%;
+      text-align: center;
+      float: left;
+    }
+	}
+	.more-concerts .card-tag {
+		margin-bottom: 1em;
+		background-color: @orangered;
+		color: white;
+		margin-left: 20%;
+		line-height: 2.5;
+		padding-left: 1.5em;
+	}
+}
+
+.event-card div.calendar-item:not(:last-of-type) {
+  border-bottom: 1px dotted grey;
+}
+
+.calendar-item {
+	padding: 6% 1%;
+  
+	.event-date {
+		float: left;
+		padding-top: 1%;
+		margin: 0;
+		max-width: 23%;
+    text-align: center;
+		width: 20%;
+		.date-only {
+			display: block;
+		}
+		.month, .day, .time {
+			display: block;
+			text-align: center;
+		}
+		.month {
+			text-transform: uppercase;
+			line-height: 1em;
+		}
+		.day {
+			font-size: 1.8em;
+		}
+		.time {
+			font-size: .9em;
+		}
+	}
+	.event-info {
+    border-left: 2px solid @orangered;
+		max-width: 75%;
+    padding-left: 5%;
+		float: left;
+
+	}
+  .event-date, .event-info p {
+    color: lighten(black, 30%);
+  }
+}
+
+.masonry-item {
+	display: inline-block;
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+	.masonry-grid {
+    column-count: 2;
+    column-gap: 1em;
+	}
+}
+@media (min-width: 850px) {
+	.masonry-grid {
+    column-count: 3;
+    column-gap: 1em;
+		width: 100%;
+	}
+}
+.card-blog {
+	padding: 5%;
+	  margin-bottom: .75em;
+}
+ .blog-photo {
+		  
+	.bg-image-hoverfade("dummy.png");
+		  width: 100%;
+		  min-height: 200px;
+		  font-style: #000;
+		  background-size: cover;
+		  background-position: center;
+	  position: relative;
+	  &:after {
+		content: '';
+		background-image: linear-gradient(to left,@header-color 0%,@banner-color 92%);
+		width: 100%;
+		top: 0; bottom: 0; right: 0; left: 0;
+		position: absolute;
+		opacity: .3;
+	  }
+
+	  .blog-content {
+		padding: 0 1em .5em 1em;
+		h3 {
+		  text-decoration: none;
+		}
+		p {
+		  margin: 0;
+		  line-height: .5;
+		  font-size: .85em;
+		  font-style: italics;
+		}
+	  }
+	
