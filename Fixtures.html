@@ -270,6 +270,9 @@
                           </div>
                         </section>
 
+                       <!-- tooltip block -->
+
+
 
                         <div class="my-90">
                           
@@ -277,31 +280,50 @@
                           <div class="text-center">
 
                       <div class="row">
-                        <a class="btn btn-yellow-border mb-10" id="toggleCgaFixtures"><strong>CGA Fixtures 2025</strong></a>
+                        <a class="btn btn-yellow-border mb-10" id="toggleCgaFixtures" data-toggle="tooltip" title="Click this to show/hide the CGA menu"><strong>CGA Fixtures 2025</strong></a>
                     </div>
-                    
+                    <br>
+                <P>Click on CGA Fixture menu to view below.</P>
+                <p>✓ Indicates the program is available</p>
+                <p>〤 Indicates the program is not yet available.</p>
+
                     <div class="container-fluid" style="text-align: left;" id="cgaFixtures2025" style="display: none;"> 
                         <div class="center">
                             <div class="css-treeview">
                                     <ul>
                                         <li><input type="checkbox" id="item-2-1" /><label for="item-2-1"><i class="fa-regular fa-circle-dot" style="color: rgb(241, 198, 5);"></i> CGA Road Running Calendar</label>
                                             <ul>
-                                                <li><a href="assets/docs/Fixtures/2025 CGA Road Running Fixtures -Final Fixtures December 2024.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
+                                                <li><a href="assets/docs/Fixtures/2025 CGA Road Running Fixtures -Final Fixtures December 2024.pdf" target="blank" data-toggle="tooltip" title="Click to open"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
                                             </ul>
                                         </li>
                                         <li><input type="checkbox" id="item-2" /><label for="item-2"><i class="fa-regular fa-circle-dot" style="color: rgb(241, 198, 5);"></i> CGA Track & Field (Open)</label>
                                             <ul>
-                                                <li><a href="assets/docs/Fixtures/CGA Track & Field Fixtures 2025.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
+                                                <li><a href="assets/docs/Fixtures/CGA Track & Field Fixtures 2025.pdf" target="blank" data-toggle="tooltip" title="Click to open"><i class="fa-solid fa-magnifying-glass"></i> View All</a></li>
                                                 <li><input type="checkbox" id="item-2-2-0" /><label for="item-2-2-0">Programs</label>
                                                     <ul>
-                                                        <li><a href="assets/docs/Fixtures/25 January  2025 League 1 program.pdf" target="blank"><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 1/Senior Meet 1</a> ✓</li>
-                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 2/Senior Meet 2</a></li>
-                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 3/Senior Meet 3</a></li>
-                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 4/Senior Meet 4</a></li>
+                                                        <li><a href="assets/docs/Fixtures/25 January  2025 League 1 program.pdf" target="blank" data-toggle="tooltip" title="Programs that are available are checked"><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 1/Senior Meet 1</a> ✓</li>
+                                                        <li><a title="Not available yet"><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 2/Senior Meet 2</a> 〤</li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 3/Senior Meet 3</a> 〤</li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> CGA Open League 4/Senior Meet 4</a> 〤</li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
+
+                                        <li><input type="checkbox" id="item-3" /><label for="item-3"><i class="fa-regular fa-circle-dot" style="color: rgb(241, 198, 5);"></i> CGA Cross Country</label>
+                                            <ul>
+                                                <li><a><i class="fa-solid fa-magnifying-glass"></i> View All</a> 〤</li>
+                                                <li><input type="checkbox" id="item-2-2-3" /><label for="item-2-2-3">Programs</label>
+                                                    <ul>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> League 1</a> 〤</li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> League 2</a> 〤</li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> League 3</a> 〤</li>
+                                                        <li><a ><i class="fa-solid fa-magnifying-glass"></i> League 4</a> 〤</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
                                     </ul>
                                 </li>
                             </div>
